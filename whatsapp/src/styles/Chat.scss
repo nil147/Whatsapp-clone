@@ -1,0 +1,66 @@
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .top-left {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.chat-message {
+  background-image: url("https://fsa.zobj.net/crop.php?r=HPh6XjS0Se_VNODSUR6Fm1R9bTHZZaIQV6BsKvbihNqsgOSM3Ftm58HrQ7nlrF9R65nUhHXkiA34Cu7Y-5-p1HjQHAcMj7SGoQS1XmK8i_Su-brIg-80w-9HV-s5c4w8z4JjR8VarCwJf8G_O4NlM5gHNQF7uHvtbJqCEL3X3fXhBsF3EdkZTrdef64jzBx9PwjBSJ23C_QtWaUi");
+  flex: 1;
+
+  .message {
+    background-color: #dcf8c6;
+    border-radius: 40px;
+    padding: 10px 15px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    .message-name {
+      font-weight: 400;
+      margin-bottom: 3px;
+    }
+
+    .message-date {
+      font-weight: 100;
+      margin-left: 10px;
+    }
+  }
+}
+
+.chat-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+
+  .bottom-center {
+    display: flex;
+    flex: 1;
+    padding: 5px 30px;
+
+    form {
+      flex: 1;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      padding: 8px 15px;
+    }
+  }
+}
