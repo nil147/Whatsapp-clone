@@ -70,15 +70,15 @@ function Chat() {
       </div>
       <div className="chat-message">
         {messages.map((message) => (
-          <p className="message">
+          <p className={`chat-reciver ${message.name === user.displayName && "message-send"}`}>
             <span className="message-name">{message.name}
-            <span className="message-date">
-              {new Date(message.timestamp?.toDate()).toDateString()}
+              <span className="message-date">
+                {new Date(message.timestamp?.toDate()).toLocaleTimeString()}
+              </span>
             </span>
-            </span>
-            
+
             {message.message}
-            
+
           </p>
         ))}
       </div>
